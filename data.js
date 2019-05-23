@@ -53,7 +53,7 @@ function searchAndBuild() {
 
   // Construct an aggregation pipeline that returns the averagePrice and
   // count of ALL matching properties and then call the following function:
-  // updateAggregateText(avgPrice, count, resultsLimit);
+  // updateAggregateText(count, avgPrice, resultsLimit);
 }
 
 // Update the text showing total results and average price
