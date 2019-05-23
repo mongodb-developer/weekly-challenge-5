@@ -1,0 +1,20 @@
+.header-fixed {
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+}
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #48D1CC;
+}

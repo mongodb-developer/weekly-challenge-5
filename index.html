@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Stitch JavaScript SDK -->
+  <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.3.1/stitch.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<header class="header-fixed">
+	<div class="header-limiter">
+		<h1><a> MongoDBnB <span> Finder </span></a></h1>
+	</div>
+</header>
+
+<br>
+
+<body>
+  <div id="search-container">
+        <legend>Search for Properties</legend>
+        <p>
+           <label>Country</label>
+           <select id = "countryList"></select>
+
+           <label>Type</label>
+           <select id = "typeList"></select>
+
+           <label>Beds</label>
+           <select id = "bedroomsList"></select>
+
+           <label>Baths</label>
+           <select id = "bathroomsList"></select>
+
+           <label>Price</label>
+           <select id = "priceList"></select>
+
+           <label>Results</label>
+           <select id = "resultsList"></select>
+
+           <button type="button" onclick="searchAndBuild()">Search</button>
+        </p>
+  </div>
+        </p>
+
+  <div id="aggregate-text"> Loading ... </div>
+
+  <p>
+
+  <div class="table-container" id="table-container">
+    <!-- Render Application Data in the Table -->
+    <div class="data-table-class">
+      <table id="data-table" class="table">
+        <tr>
+          <th class="fixed-width">Name</th>
+          <th class="fixed-width">Type</th>
+          <th class="fixed-width">Bed</th>
+          <th class="fixed-width">Bath</th>
+          <th class="fixed-width">Price</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Pulls necessary data for the application -->
+  <script src="./data.js"></script>
+</body>
+
+</html>
